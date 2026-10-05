@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aarthi Organic Cosmetics | Natural Beauty, Naturally You</title>
+<meta name="description" content="Organic and natural cosmetics. 20% off for a limited time.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+<a href="#home" class="brand"><span>Organic Cosmetics</span></a>
+  <nav id="menu" class="menu" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#offers">Offers</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button id="cartBtn" class="cart-btn" aria-label="Open cart">Cart <span id="cartCount">0</span></button>
+    <button id="burger" class="burger" aria-label="Toggle menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="chip">20% off all organic cosmetics</p>
+    <h1>Natural Beauty, Naturally You</h1>
+    <p>Plant-based face, skin, hair and body care made from ingredients you can pronounce. Gentle on your skin, kind to the planet.</p>
+    <div class="btn-row">
+      <a href="#products" class="btn">Shop now</a>
+      <a href="#offers" class="btn btn-ghost">View offers</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=900&q=80" alt="Organic skincare bottles on a natural surface">
+    <div class="badge"><b>20%</b> off</div>
+  </div>
+</section>
+
+<section id="offers" class="offer">
+  <h2>20% OFF on Organic Cosmetics</h2>
+  <p id="offerNote">Every product is already marked down. This offer ends in:</p>
+  <div id="countdown" class="countdown" aria-live="polite">
+    <div><b id="cdD">00</b>Days</div><div><b id="cdH">00</b>Hours</div><div><b id="cdM">00</b>Minutes</div><div><b id="cdS">00</b>Seconds</div>
+  </div>
+  <p id="expired" class="expired" hidden>Offer Expired</p>
+</section>
+
+<section class="section">
+  <h2 class="title">Shop by category</h2>
+  <div id="categories" class="cats"></div>
+</section>
+
+<section id="products" class="section tint">
+  <h2 class="title">Our products</h2>
+  <div class="tools">
+    <input id="search" type="search" placeholder="Search by name or category" aria-label="Search products">
+    <div id="filters" class="filters"></div>
+  </div>
+  <div id="grid" class="grid"></div>
+  <p id="empty" class="empty" hidden>No products match your search. Try another name or category.</p>
+</section>
+
+<section id="about" class="section about">
+  <div class="about-img"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=80" alt="Natural cosmetics with botanical ingredients"></div>
+  <div>
+    <h2 class="title left">About Aarthi Organic Cosmetics</h2>
+    <p>We started with a simple idea: what you put on your skin should be as honest as what you put on your plate. Every product we sell is built around botanical ingredients such as aloe, rose, coconut, turmeric and shea.</p>
+    <p>We skip harsh chemicals and artificial fragrance, and we choose recyclable packaging wherever we can. The result is everyday beauty care that is gentle, effective and fairly priced.</p>
+  </div>
+</section>
+
+<section class="section tint">
+  <h2 class="title">Why choose us</h2>
+  <div id="why" class="why"></div>
+</section>
+
+<section id="contact" class="section contact">
+  <div>
+    <h2 class="title left">Get in touch</h2>
+    <p>Questions about ingredients or an order? Send us a message and we will reply within one working day.</p>
+  </div>
+  <form id="contactForm" novalidate>
+    <label>Name<input id="cName" type="text" autocomplete="name"><small></small></label>
+    <label>Email<input id="cEmail" type="email" autocomplete="email"><small></small></label>
+    <label>Phone number<input id="cPhone" type="tel" autocomplete="tel"><small></small></label>
+    <label>Message<textarea id="cMsg" rows="4"></textarea><small></small></label>
+    <button class="btn" type="submit">Send message</button>
+    <p id="formOk" class="form-ok" hidden>Thank you! Your message has been sent.</p>
+  </form>
+</section>
+</main>
+
+<footer class="footer">
+  <div><h3>Aarthi Organic Cosmetics</h3><p>Natural Beauty, Naturally You.</p></div>
+  <div><h4>Quick links</h4><a href="#home">Home</a><a href="#products">Products</a><a href="#offers">Offers</a><a href="#about">About Us</a><a href="#contact">Contact</a></div>
+  <div><h4>Categories</h4><a href="#products" data-cat="Face Care">Face Care</a><a href="#products" data-cat="Skin Care">Skin Care</a><a href="#products" data-cat="Hair Care">Hair Care</a><a href="#products" data-cat="Lip Care">Lip Care</a><a href="#products" data-cat="Body Care">Body Care</a><a href="#products" data-cat="Makeup">Makeup</a></div>
+  <div><h4>Contact</h4><p>12 Green Street, Chennai, India</p><p>+91 98765 43210</p><p>hello@aarthiorganic.com</p></div>
+  <p class="copy">&copy; 2026 Aarthi Organic Cosmetics. All rights reserved.</p>
+</footer>
+
+<div id="overlay" class="overlay"></div>
+<aside id="cart" class="cart" aria-label="Shopping cart" aria-hidden="true">
+  <div class="cart-head"><h3>Your cart</h3><button id="cartClose" aria-label="Close cart">&times;</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-foot">
+    <div class="row"><span>Subtotal (before 20% off)</span><span id="subtotal">₹0</span></div>
+    <div class="row"><span>Discount (20%)</span><span id="discount">-₹0</span></div>
+    <div class="row total"><span>Total</span><span id="total">₹0</span></div>
+    <button id="checkout" class="btn full">Checkout</button>
+    <p id="orderOk" class="form-ok" hidden>Order Placed Successfully</p>
+  </div>
+</aside>
+<div id="toast" class="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
